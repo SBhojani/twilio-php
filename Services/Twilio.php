@@ -56,7 +56,6 @@ abstract class Base_Services_Twilio extends Services_Twilio_Resource
                             CURLOPT_USERAGENT => self::qualifiedUserAgent(phpversion()),
                             CURLOPT_HTTPHEADER => array('Accept-Charset: utf-8'),
                             CURLOPT_CAINFO => dirname(__FILE__) . '/cacert.pem',
-                            'cafile' => dirname(__FILE__) . '/cacert.pem',
                         ),
                     )
                 );
